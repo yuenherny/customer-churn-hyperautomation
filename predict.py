@@ -43,11 +43,12 @@ def main():
     X_test = pd.concat([df2[col_text2binary], df3], axis=1)
 
     # Perform inference using Sklearn Pipeline
-    with open(os.path.join(MODELS_PATH, "logr.pkl"), "rb") as f:
+    with open(os.path.join(MODELS_PATH, "svm_minmax.pkl"), "rb") as f:
         pipe_logr = pkl.load(f)
 
     y_pred = pipe_logr.predict(X_test.values)
     df_test = pd.DataFrame(data=y_pred, columns=["Churn"])
+    df_test["Churn"] = df_test["Churn"].apply(lambda x: "Yes" if x == 1 else "No")
 
     df = pd.concat([df, df_test], axis=1)
 
