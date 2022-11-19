@@ -1,0 +1,14 @@
+Pre-inference
+1. Open browser
+2. At browser, go to https://maxis365.sharepoint.com/:f:/r/sites/InternalAudit/Public%20Documents/churn_data?csf=1&e=TopNtW
+3. Download data
+4. Extract/Move file from Downloads to selected folder
+
+Inference
+1. Ask user for filename
+2. Save the filename as variable
+3. Run predict.py
+
+Email
+1. Get the results file
+2. Use Gmail to email to yuenhern.yu@gmail.com

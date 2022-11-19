@@ -1,0 +1,13 @@
+Param(
+
+    [Parameter(Mandatory=$true)] [string]$TestData
+
+)
+
+Set-ExecutionPolicy Bypass
+
+Set-Location -path "D:\Repos\GitHub\maxis-intelligent-automation"
+
+Invoke-Expression -command ".\venv\Scripts\activate"
+
+Invoke-Expression -command "python .\predict.py $TestData"

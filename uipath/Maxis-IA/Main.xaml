@@ -1,0 +1,241 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="811.2,3263.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uascw="clr-namespace:UiPath.Activities.System.Compression.Workflow;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Activities.System.Encode</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Activities.System.Compression.Workflow</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="52">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="560,3198.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="https://maxis365.sharepoint.com/:f:/r/sites/InternalAudit/Public%20Documents/churn_data?csf=1&amp;e=TopNtW" Name="Data_Url" />
+      <Variable x:TypeArguments="x:String" Default="C:\Users\USER\Downloads" Name="Downloads_Dir" />
+      <Variable x:TypeArguments="x:String" Name="Input_Dir">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">D:\Repos\GitHub\maxis-intelligent-automation\input</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Default="C:\Users\USER\Downloads\churn_data.zip" Name="Extract_Filepath" />
+      <Variable x:TypeArguments="x:String" Name="Working_Dir">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">D:\Repos\GitHub\maxis-intelligent-automation\uipath\Maxis-IA</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Input_Filepath" />
+      <Variable x:TypeArguments="x:Boolean" Name="File_Exists" />
+      <Variable x:TypeArguments="x:String" Default="D:\Repos\GitHub\maxis-intelligent-automation" Name="Workspace_Path" />
+      <Variable x:TypeArguments="sco:Collection(x:String)" Name="Saved_Filepath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="518.4,468.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="3e93f404-770b-4626-8830-7d3b59846a0f" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Download'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e93f404-770b-4626-8830-7d3b59846a0f" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://maxis365.sharepoint.com/sites/InternalAudit/Public%20Documents/Forms/AllItems.aspx?csf=1&amp;e=TopNtW&amp;cid=76c15319%2Da57d%2D4924%2Dae76%2D675a446da7a4&amp;RootFolder=%2Fsites%2FInternalAudit%2FPublic%20Documents%2Fchurn%5Fdata&amp;FolderCTID=0x012000A2F6F62FF23C594C8AD70B20DB2BE430" DesignTimeRectangle="332, 283, 63, 14" ElementType="Text" FriendlyName="'Download'" FullSelectorArgument="&lt;webctrl id='id__17' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id__17' tag='SPAN' type='' aaname='Download' check:text='Download' /&gt;" Guid="b189e989-c507-4c12-b4ff-91a1e61f12b8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAASCAYAAAAAGGMhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGcSURBVFhH7ZTBbcMwDEU7WQbIABkkB5+yho5ZwsjBU+QSD5EcMgMjUqRMUmprFYERoPqAAcsSxc8nyl/QldVhKHUYSh2GkoVxPcNuf3DPCS53nt9Yz/EEu3Dj0bt1g+BqK2EcJ3jykMSAhvHBH7bT58FA3ScY9meYebiVPhMGPOByPEC48pDH1avk9yCQOqkywWtnLFr2UsWXMDBW53UHxF0sj+1m63kYp7/CAJiDbM6bapNkQoxZ4lSQNoZwJAebN3NxLNAtjARCF0jzyu8cFBzjKXnWsViP/x+2w6heGds5uHZ5jwnHuC8XhQVkU5V8C3QHo+qtbPVFaq7quYxtvybfrKkXERPSWkyMZnAfZaABhgGTZQ9BOkuuQj75lSDXwdDfq5RtN+Q1MU4KS/MChdUAo+5NwS18qWJrnulbIwwyZILSaZhTwjiTLJkcXBfguIhbC4OKW+ZQNC/xfi/yJPnLWMzz+z/DtJkrOouB5HWOepQxiqKTUN2DaoKBSkXlvCbWeYo/U3sNbGzq0p9g/HN1GEodhlKHkQXwAiG9cpcDba4uAAAAAElFTkSuQmCC" InformativeScreenshot="ea48adddc3147f20f1e871ed0f3efd06.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Internal Audit - churn_data - All Documents' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="730, 206, 968, 528" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="9e9e2a4aa03a393ab705df68726f2c37.png" Selector="&lt;html app='chrome.exe' title='New Tab'/&gt;" Url="[Data_Url]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:GetLastDownloadedFile File="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[Downloads_Dir]" sap:VirtualizedContainerService.HintSize="518.4,294.4" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+      <ui:GetLastDownloadedFile.Body>
+        <ActivityAction>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ui:GetLastDownloadedFile.Body>
+    </ui:GetLastDownloadedFile>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Downloads" sap:VirtualizedContainerService.HintSize="518.4,594.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="b82b8773-bed0-49d5-a3a2-349f36832fef" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,303.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uascw:ExtractFiles DestinationFolderInfo="{x:Null}" Password="{x:Null}" CodePage="Default" DestinationFolder="[Input_Dir]" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="False" FileToExtract="[Extract_Filepath]" sap:VirtualizedContainerService.HintSize="443.2,208.8" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="29, 280, 896, 536" Arguments="[Downloads_Dir]" FilePath="C:\Windows\explorer.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS0SURBVFhH7ZZrb1RlFIWrRk38YPjk7+An+BP8CSbegFpKaQty6YUiRaJYuSgi4ggIQhViCIYY40ejcnG0hdaW2rl0ZtpOGQba6XTui7X3+56e06HzpT2TNoGd7HTmTHPOk7XW3u9peFbPaj1XKR7Aw2AL0re24OHtRjwKvo/Zf7Zi7t9mzA20YH5wO7J327Aw3I6F/3YiP7ILhXt7UBjbi+L/nSiOd6Mc6kE58iEqkV6UoweD9tb+FGZ+QCXZj7mhbqRvE/LvRswGmwhIyIFtyAwS8k4rIQVwB3IjHyA/upuQAthBwC6UQvtQDu8n4AFUJj6CvbU/hZl+4P5lIHUVudBxj4oC2YwMIefvWBWH2glIFUeNisUxAlLF0rgA9hCQKkYP1gEw+T1ESaSuoTRFNQfaVcVZqpgZaKbNVkUBtCoWqGJRbe4gIG0WwLAA9voNeMkAJi8Qkp9TP6OSuo7sSO9iFucHXRVzwwSULFLF4hhVVEBjc0Vsjh7wG/CiC6jNz1QS6d+Qj57SLGYEkCpm77Yam6lifpQq3jMqlsTmkFWRObS39qeQrAaUPs9cXlFIyaJjc5YqLgzJRBNQbFbAPQbQTrPk0N7anzJwVYDT37HPEvBXO9EE1GFpISBV5MrJ0+aCHZaStbksNkf21xuQ6k2fY58BHvyiE602WxUX1GaTRUfFktg83klAqug/oEB5AB31pr5lFq/jkezFRZu3MYfGZi+g5tABZA7trf0pVzlpj3qTAZ1os7itigKoOWwloGuz5nC8A2WxObyvjoBe9Sa/4aBcI+AWY7OjouSQNueG2wi4AwWqaAZlb70Bq9Sb/JqAV3n8bSagsVlUFEC12QKKzUWxWQFpc7i7ToDV6iVOEfAnvkRssjk0Nrs5bLWAYrMAis0mh/bW/pQBFDhHPcKJeomveLJcwYObm3g+i82NS20WQMmhAjKHCsgc1gVQ1SOcqnfaqJc4SfAfCfgeAV2b3RxudweFr2AmhwLY5TegZM9jraNe4ksC9itg+hYBrc0Zj81LBkX2oeTQd0DH2ikZDI968RO8fhGpG+9qDsVmZ93IqaKA3IdPAnYCoa7X7e1XXzXVi39BwAtI/eUCmlOliYDNug8NYDsBd6LIQTGrRs/lNCE32kesrmqqF/+c188r4GIOabMASg6zzGFOFrYFlEEpMYe6avTI60nbR6yuaqoXO07Ac0j9+Y7J4RLArQronCjLAVYiPh15y6oXo3qxY7x+BvcF8IYLqIMigBwUA9i2BNDswi4fAb3qxT3qTRzl9QBmFFByuFmPPQdQJtkF5KDwBdYAmlXjI2AN9aQTpwn4tgXkoAigDIoDaFdNQSZZAOXd0H/AGurxezF8RAEXJ3lNAJdTTwFPInWzCck/qgE5KDUBuWr8B1xGvYkj/HwC07+/5QLKmbw2gB71FO4z0/zuA+Ar7JfYz8uzVlRGPbFW1KNy0T7TE8f8ANzAFsDn5FkrKlobcK2lctFPTfO7/Ze1L8SOvumqd5j9icLan9dHIda3kXBphYuwqaL9af0UQn0bEPk4qICRwwL4MvsF9sozVI9C+FCAoAL4GvtV9otyfV0VQofe4B+ZwKe9GhoeAwxPj51em8iCAAAAAElFTkSuQmCC" InformativeScreenshot="e2ffb9aad61f33468e99a9704ff143d4.png" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='Downloads'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="518.4,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please insert the filepath of your CSV input:" Title="CSV Input">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Input_Filepath]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:FileExistsX DisplayName="File Exists" Exists="[File_Exists]" sap:VirtualizedContainerService.HintSize="518.4,134.4" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[System.IO.Path.Combine(Input_Dir, Input_Filepath)]" />
+    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="518.4,905.6" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+      <ui:IfElseIf.ConditionBlocks>
+        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+          <ui:IfElseIfBlock BlockType="If" Condition="[File_Exists]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="425.6,505.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="PSScript" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="384,76" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Inference start.&quot;]" />
+                <ui:ReadTextFile Content="[PSScript]" DisplayName="Read Text File" FileName="[System.Io.Path.Combine(Working_Dir, &quot;execute_py.txt&quot;)]" sap:VirtualizedContainerService.HintSize="384,80.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                <ui:InvokePowerShell x:TypeArguments="x:String" ContinueOnError="{x:Null}" CommandText="[PSScript]" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="384,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_4" IsScript="True" Output="[Saved_Filepath]">
+                  <ui:InvokePowerShell.Parameters>
+                    <InArgument x:TypeArguments="x:String" x:Key="TestData">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Input_Filepath" />
+                    </InArgument>
+                  </ui:InvokePowerShell.Parameters>
+                </ui:InvokePowerShell>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="384,76" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Inference completed. Results saved as &quot; + System.IO.Path.Combine(Workspace_Path, Saved_Filepath(0).ToString)]" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+          <ui:IfElseIfBlock BlockType="Else">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,168.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,76" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Inference not performed.&quot;]" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+        </sc:BindingList>
+      </ui:IfElseIf.ConditionBlocks>
+    </ui:IfElseIf>
+    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Hi, &quot; _&#xA;+ Environment.NewLine _&#xA;+ &quot;Kindly find the report as attached. &quot; _&#xA;+ Environment.NewLine _&#xA;+ &quot;Regards, &quot; _&#xA;+ &quot;UiPath&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="518.4,226.4" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="UiPath Test: Email with Attachment" To="yuenhern.yu@gmail.com">
+      <ui:SendOutlookMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(Workspace_Path, Saved_Filepath(0).ToString)]</InArgument>
+        </scg:List>
+      </ui:SendOutlookMail.Files>
+    </ui:SendOutlookMail>
+  </Sequence>
+</Activity>

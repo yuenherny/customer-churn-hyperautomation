@@ -1,0 +1,10 @@
+numpy
+pandas
+tqdm
+scikit-learn
+notebook
+seaborn
+matplotlib
+plotly
+pandas-profiling
+xgboost
