@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Output
-output*.txt
+output*.csv
