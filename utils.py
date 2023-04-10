@@ -12,6 +12,7 @@ def make_countplot_facet_grid(df: pd.DataFrame, column: str, row: str, x: str):
     g.map_dataframe(sns.countplot, x=x)
     g.set_titles(row_template = '{row_name}', col_template = '{col_name}')
 
+
 def compute_cramers_v(df, column1, column2):
     """ calculate Cramers V statistic for categorial-categorial association.
         uses correction from Bergsma and Wicher, 
@@ -28,6 +29,7 @@ def compute_cramers_v(df, column1, column2):
     rcorr = r - ((r-1)**2)/(n-1)
     kcorr = k - ((k-1)**2)/(n-1)
     return np.sqrt(phi2corr / min( (kcorr-1), (rcorr-1)))
+
 
 def inference(pipe, X_train, y_train, X_test, y_test, model_name):
     pipe.fit(X_train, y_train)

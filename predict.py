@@ -11,6 +11,7 @@ FILE_NAME = sys.argv[1]
 OUTPUT_PATH = "output"
 MODELS_PATH = "models"
 
+
 def main():
     df = pd.read_csv(os.path.join(INPUT_PATH, FILE_NAME))
 
@@ -59,6 +60,7 @@ def main():
     df.to_csv(SAVED_FILEPATH, index=False)
 
     print(SAVED_FILEPATH)
+
 
 if __name__ == "__main__":
     main()
