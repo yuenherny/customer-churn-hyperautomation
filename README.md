@@ -7,8 +7,8 @@ Data Scientist (Internal Audit)
 Please refer to the attached document `CA Specialist Case Study 2.docx` for more info.
 
 ## Software Tools
-1. Scikit-learn
-2. UiPath Studio Community Edition 2021.10.5
+1. Data science and ML: Python and VSCode
+2. Automation: UiPath Studio Community Edition 2021.10.5
 
 ## Automation Workflow
 The automation workflow for the case study is executed using UiPath bot.
